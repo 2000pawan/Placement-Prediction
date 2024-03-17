@@ -21,7 +21,7 @@ image=Image.open('img.jpg')
 # Streamlit Function For Building Button & app.
 
 def main():
-    st.image(image,width=400)
+    st.image(image,width=600)
     st.title('College Placement Prediction')
     html_temp='''
     <div style='background-color:red; padding:12px'>
