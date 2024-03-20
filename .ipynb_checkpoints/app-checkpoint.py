@@ -6,7 +6,7 @@ from PIL import Image
 import pandas as pd
 
 
-# Load Model & Scaler & Polynomial Features
+# Load Model & Scaler 
 
 model=joblib.load('model.pkl')
 sc=joblib.load('sc.pkl')
@@ -21,11 +21,11 @@ image=Image.open('img.jpg')
 # Streamlit Function For Building Button & app.
 
 def main():
-    st.image(image,width=800)
-    st.title('Collage Placement Prediction')
+    st.image(image,width=650)
+    st.title('College Placement Prediction')
     html_temp='''
     <div style='background-color:red; padding:12px'>
-    <h1 style='color:  #000000; text-align: center;'>Collage Placement Prediction Machine Learning Model</h1>
+    <h1 style='color:  #000000; text-align: center;'>College Placement Prediction Machine Learning Model</h1>
     </div>
     <h2 style='color:  red; text-align: center;'>Please Enter Input</h2>
     '''

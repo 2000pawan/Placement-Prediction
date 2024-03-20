@@ -6,7 +6,7 @@ from PIL import Image
 import pandas as pd
 
 
-# Load Model & Scaler & Polynomial Features
+# Load Model & Scaler 
 
 model=joblib.load('model.pkl')
 sc=joblib.load('sc.pkl')
